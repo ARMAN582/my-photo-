@@ -30,11 +30,11 @@
     padding:4px; margin-bottom:16px; animation:hueRot 6s linear infinite; box-shadow:var(--glow);
   }
   @keyframes hueRot { 0%{filter:hue-rotate(0deg)} 100%{filter:hue-rotate(360deg)} }
-  .avatar-inner { width:100%; height:100%; border-radius:50%; background:var(--card); display:flex; align-items:center; justify-content:center; font-size:48px; }
+  .avatar-inner { width:100%; height:100%; border-radius:50%; background:var(--card); display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:800; color:var(--accent2); }
   .header h1 { font-size:2.2rem; font-weight:800; background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:6px; }
-  .header .subtitle { color:var(--muted); font-size:1rem; letter-spacing:2px; text-transform:uppercase; }
+  .header .subtitle { color:var(--muted); font-size:1rem; letter-spacing:2px; text-transform:uppercase; margin-bottom: 8px;}
 
-  .section-title { display:flex; align-items:center; gap:12px; font-size:1.15rem; font-weight:800; color:var(--accent2); text-transform:uppercase; letter-spacing:2px; margin:32px 0 16px; padding-left:6px; }
+  .section-title { display:flex; align-items:center; gap:12px; font-size:1.15rem; font-weight:800; color:var(--accent2); text-transform:uppercase; letter-spacing:2px; margin:36px 0 16px; padding-left:6px; }
   .section-title::after { content:''; flex:1; height:1px; background:linear-gradient(90deg,#ffcb4744,transparent); }
 
   .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:14px; }
@@ -49,7 +49,7 @@
   .app-card:hover { transform:translateY(-6px) scale(1.04); border-color:rgba(255,255,255,0.25); box-shadow:0 12px 40px rgba(0,0,0,0.4); }
   .app-card .open-tag { position:absolute; bottom:8px; font-size:0.65rem; color:var(--accent3); opacity:0; transition:opacity 0.2s; }
   .app-card:hover .open-tag { opacity:1; }
-  .app-logo { width:60px; height:60px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:32px; }
+  .app-logo { width:56px; height:56px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:28px; }
   .app-name { font-size:0.85rem; font-weight:600; text-align:center; }
   .app-info { font-size:0.75rem; color:var(--muted); text-align:center; word-break:break-all; }
 
@@ -64,7 +64,7 @@
   .income-highlight { background:linear-gradient(135deg,#1a2a1a,#0f1f0f); border-color:rgba(0,200,100,0.3); }
   .income-highlight .value { color:#4eff91; }
 
-  /* Logo colors */
+  /* App colors */
   .c-insta{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
   .c-wa{background:linear-gradient(135deg,#25d366,#128c7e)}
   .c-fb{background:linear-gradient(135deg,#1877f2,#0856af)}
@@ -82,9 +82,36 @@
   .c-pay{background:linear-gradient(135deg,#3c4ef5,#1a237e)}
   .c-li{background:linear-gradient(135deg,#0077b5,#005885)}
   .c-tt{background:linear-gradient(135deg,#000,#111)}
+  .c-ai{background:linear-gradient(135deg,#0e2a2a,#1f5a5a)}
+  .c-coder{background:linear-gradient(135deg,#2a1a2a,#513451)}
+  .c-stream{background:linear-gradient(135deg,#111122,#333344)}
 
   @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
   .app-card,.info-card { animation:fadeUp 0.5s ease both; }
+
+  .quote-msg {
+    background: linear-gradient(135deg, #251608, #1a0f07);
+    border: 1px solid rgba(255,107,53,0.4);
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 12px 48px rgba(255,107,53,0.25);
+  }
+  .quote-msg p {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffcb47;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  .quote-msg span {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    opacity: 0.85;
+  }
 
   @media(max-width:600px){
     .grid{grid-template-columns:repeat(3,1fr);gap:10px}
@@ -98,151 +125,698 @@
 <div class="container">
 
   <div class="header">
-    <div class="avatar-ring"><div class="avatar-inner">👤</div></div>
+    <div class="avatar-ring"><div class="avatar-inner">AQ</div></div>
     <h1>ARMAN QURESHI</h1>
-    <div class="subtitle">Trader • Creator • Dreamer 🔥</div>
+    <div class="subtitle">Trader • Creator • 12th Pass • Fighter Since 2019 🔥</div>
   </div>
 
-  <div class="section-title">📱 Social Media</div>
+  <div class="section-title">🌐 Social Media & Communication</div>
   <div class="grid">
     <a class="app-card" href="https://www.instagram.com/armanqureshi2800" target="_blank" rel="noopener">
       <div class="app-logo c-insta">📸</div>
       <div class="app-name">Instagram</div>
       <div class="app-info">@armanqureshi2800</div>
-      <div class="open-tag">🔗 Profile Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://wa.me/919026550240" target="_blank" rel="noopener">
       <div class="app-logo c-wa">💬</div>
       <div class="app-name">WhatsApp</div>
       <div class="app-info">+919026550240</div>
-      <div class="open-tag">🔗 Chat Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
-    <a class="app-card" href="https://www.facebook.com/arman.qureshi.544437?rdid=j1jOvPhQILp8dVaX&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19pPMX9SMV%2F#" target="_blank" rel="noopener">
+    <a class="app-card" href="https://www.facebook.com/arman.qureshi.544437" target="_blank" rel="noopener">
       <div class="app-logo c-fb">🔵</div>
       <div class="app-name">Facebook</div>
       <div class="app-info">View Profile</div>
-      <div class="open-tag">🔗 Profile Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://youtube.com/@UCOyRiMeC7mCY0okyccR409w" target="_blank" rel="noopener">
       <div class="app-logo c-yt">▶️</div>
       <div class="app-name">YouTube</div>
-      <div class="app-info">Channel Open</div>
-      <div class="open-tag">🔗 Channel</div>
+      <div class="app-info">Channel</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://x.com/ArmanQureshi280" target="_blank" rel="noopener">
-      <div class="app-logo c-x" style="color:#fff;font-size:30px;font-weight:900;">𝕏</div>
+      <div class="app-logo c-x" style="color:#fff;">𝕏</div>
       <div class="app-name">X / Twitter</div>
       <div class="app-info">@ArmanQureshi280</div>
-      <div class="open-tag">🔗 Profile Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://pin.it/zvA4G8kS9" target="_blank" rel="noopener">
       <div class="app-logo c-pin">📌</div>
       <div class="app-name">Pinterest</div>
-      <div class="app-info">View Link</div>
-      <div class="open-tag">🔗 Pin Open</div>
+      <div class="app-info">View Board</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://t.me/Armanqureshi2800" target="_blank" rel="noopener">
       <div class="app-logo c-tg">✈️</div>
       <div class="app-name">Telegram</div>
       <div class="app-info">@Armanqureshi2800</div>
-      <div class="open-tag">🔗 Profile Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
-    <a class="app-card" href="https://www.snapchat.com/@armanqureshi_28?share_id=CpojVxx9dJo&locale=en-US" target="_blank" rel="noopener">
+    <a class="app-card" href="https://www.snapchat.com/@armanqureshi_28" target="_blank" rel="noopener">
       <div class="app-logo c-snap" style="font-size:30px;">👻</div>
       <div class="app-name">Snapchat</div>
       <div class="app-info">@armanqureshi_28</div>
-      <div class="open-tag">🔗 Profile Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://tiktok.com/@armanqureshi2800" target="_blank" rel="noopener">
       <div class="app-logo c-tt" style="color:#fff;font-size:28px;">🎵</div>
       <div class="app-name">TikTok</div>
       <div class="app-info">@armanqureshi2800</div>
-      <div class="open-tag">🔗 Profile Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
-    <a class="app-card" href="https://www.linkedin.com/public-profile/settings/?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bb35PD8DvTMuzLbV7SV9GOQ%3D%3D" target="_blank" rel="noopener">
+    <a class="app-card" href="https://www.linkedin.com" target="_blank" rel="noopener">
       <div class="app-logo c-li">💼</div>
       <div class="app-name">LinkedIn</div>
       <div class="app-info">View Profile</div>
-      <div class="open-tag">🔗 Profile Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
   </div>
 
-  <div class="section-title">☁️ Google & Apps</div>
+  <div class="section-title">🤖 AI & Productivity Tools</div>
   <div class="grid">
-    <a class="app-card" href="mailto:k4046280@gmail.com" target="_blank" rel="noopener">
+    <a class="app-card" href="https://chatgpt.com" target="_blank" rel="noopener">
+      <div class="app-logo c-ai">💬</div>
+      <div class="app-name">ChatGPT</div>
+      <div class="app-info">chatgpt.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://gemini.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-ai">✨</div>
+      <div class="app-name">Gemini AI</div>
+      <div class="app-info">gemini.google.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://claude.ai" target="_blank" rel="noopener">
+      <div class="app-logo c-ai">🌟</div>
+      <div class="app-name">Claude AI</div>
+      <div class="app-info">claude.ai</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://perplexity.ai" target="_blank" rel="noopener">
+      <div class="app-logo c-ai">🔍</div>
+      <div class="app-name">Perplexity AI</div>
+      <div class="app-info">perplexity.ai</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://notion.so" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">📝</div>
+      <div class="app-name">Notion</div>
+      <div class="app-info">notion.so</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://trello.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">📋</div>
+      <div class="app-name">Trello</div>
+      <div class="app-info">trello.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://slack.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">💬</div>
+      <div class="app-name">Slack</div>
+      <div class="app-info">slack.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://zoom.us" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">📹</div>
+      <div class="app-name">Zoom</div>
+      <div class="app-info">zoom.us</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://workspace.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-drive">🗂️</div>
+      <div class="app-name">Workspace</div>
+      <div class="app-info">google.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://discord.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">🎮</div>
+      <div class="app-name">Discord</div>
+      <div class="app-info">discord.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+  </div>
+
+  <div class="section-title">💻 Coding & Developer Tools</div>
+  <div class="grid">
+    <a class="app-card" href="https://github.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">🐙</div>
+      <div class="app-name">GitHub</div>
+      <div class="app-info">github.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://replit.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">💻</div>
+      <div class="app-name">Replit</div>
+      <div class="app-info">replit.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://stackoverflow.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">🛠️</div>
+      <div class="app-name">StackOverflow</div>
+      <div class="app-info">stackoverflow.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://vscode.dev" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">⌨️</div>
+      <div class="app-name">VS Code Web</div>
+      <div class="app-info">vscode.dev</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://vercel.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">▲</div>
+      <div class="app-name">Vercel</div>
+      <div class="app-info">vercel.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://netlify.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">🌐</div>
+      <div class="app-name">Netlify</div>
+      <div class="app-info">netlify.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://docker.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">🐳</div>
+      <div class="app-name">Docker</div>
+      <div class="app-info">docker.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://gitlab.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">🦊</div>
+      <div class="app-name">GitLab</div>
+      <div class="app-info">gitlab.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://bitbucket.org" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">🪣</div>
+      <div class="app-name">Bitbucket</div>
+      <div class="app-info">bitbucket.org</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://postman.com" target="_blank" rel="noopener">
+      <div class="app-logo c-coder">🚀</div>
+      <div class="app-name">Postman</div>
+      <div class="app-info">postman.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+  </div>
+
+  <div class="section-title">📈 Trading & Finance</div>
+  <div class="grid">
+    <a class="app-card" href="https://www.deribit.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">📊</div>
+      <div class="app-name">Deribit</div>
+      <div class="app-info">deribit.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://binance.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">🪙</div>
+      <div class="app-name">Binance</div>
+      <div class="app-info">binance.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://zerodha.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">📉</div>
+      <div class="app-name">Zerodha</div>
+      <div class="app-info">zerodha.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://groww.in" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">📈</div>
+      <div class="app-name">Groww</div>
+      <div class="app-info">groww.in</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://coinswitch.co" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">🪙</div>
+      <div class="app-name">CoinSwitch</div>
+      <div class="app-info">coinswitch.co</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://wazirx.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">₿</div>
+      <div class="app-name">WazirX</div>
+      <div class="app-info">wazirx.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://angelone.in" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">🛡️</div>
+      <div class="app-name">Angel One</div>
+      <div class="app-info">angelone.in</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://upstox.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">📈</div>
+      <div class="app-name">Upstox</div>
+      <div class="app-info">upstox.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://coindcx.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">🪙</div>
+      <div class="app-name">CoinDCX</div>
+      <div class="app-info">coindcx.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://in.tradingview.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">📺</div>
+      <div class="app-name">TradingView</div>
+      <div class="app-info">tradingview.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://kite.zerodha.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">🎯</div>
+      <div class="app-name">Kite Zerodha</div>
+      <div class="app-info">kite.zerodha.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://www.kotaksecurities.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">🏦</div>
+      <div class="app-name">Kotak Sec</div>
+      <div class="app-info">kotaksecurities.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+  </div>
+
+  <div class="section-title">☁️ Google & Utilities</div>
+  <div class="grid">
+    <a class="app-card" href="https://mail.google.com" target="_blank" rel="noopener">
       <div class="app-logo c-gmail">📧</div>
       <div class="app-name">Gmail</div>
-      <div class="app-info">k4046280@gmail.com</div>
-      <div class="open-tag">🔗 Mail Open</div>
+      <div class="app-info">mail.google.com</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://drive.google.com" target="_blank" rel="noopener">
       <div class="app-logo c-drive">🗂️</div>
       <div class="app-name">Google Drive</div>
       <div class="app-info">drive.google.com</div>
-      <div class="open-tag">🔗 Drive Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="maps.google.com" target="_blank" rel="noopener">
       <div class="app-logo c-maps">📍</div>
       <div class="app-name">Google Maps</div>
       <div class="app-info">Location</div>
-      <div class="open-tag">🔗 Maps Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://pay.google.com" target="_blank" rel="noopener">
-      <div class="app-logo c-pay" style="font-size:26px;">💳</div>
+      <div class="app-logo c-pay">💳</div>
       <div class="app-name">GPay</div>
-      <div class="app-info">k4046280-1@okhdfcbank</div>
-      <div class="open-tag">🔗 GPay Open</div>
+      <div class="app-info">pay.google.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="photos.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-drive">🖼️</div>
+      <div class="app-name">Google Photos</div>
+      <div class="app-info">Photos</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://calendar.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-gmail">📅</div>
+      <div class="app-name">Calendar</div>
+      <div class="app-info">calendar.google.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://translate.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-maps">🌐</div>
+      <div class="app-name">G Translate</div>
+      <div class="app-info">translate.google.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://news.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-drive">📰</div>
+      <div class="app-name">Google News</div>
+      <div class="app-info">news.google.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://support.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-pay">🔒</div>
+      <div class="app-name">G Auth</div>
+      <div class="app-info">support.google.com</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
     <a class="app-card" href="https://amazon.in" target="_blank" rel="noopener">
       <div class="app-logo c-amazon">📦</div>
       <div class="app-name">Amazon</div>
       <div class="app-info">amazon.in</div>
-      <div class="open-tag">🔗 Amazon Open</div>
-    </a>
-    <a class="app-card" href="open.spotify.com" target="_blank" rel="noopener">
-      <div class="app-logo c-spotify">🎵</div>
-      <div class="app-name">Spotify</div>
-      <div class="app-info">Media Link</div>
-      <div class="open-tag">🔗 Spotify Open</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
   </div>
 
-  <div class="section-title">📈 Trading & Finance</div>
-  <div class="grid-2">
-    <a class="info-card" href="https://www.deribit.com/futures/BTC-PERPETUAL" target="_blank" rel="noopener">
-      <div class="info-icon c-trader" style="font-size:28px;">📊</div>
-      <div class="info-content">
-        <div class="label">Trading App / Broker</div>
-        <div class="value">Deribit</div>
-        <div class="sub">Client ID: 902655</div>
-        <span class="badge">🔗 App Open Hogi</span>
-      </div>
+  <div class="section-title">🎵 Entertainment & Streaming</div>
+  <div class="grid">
+    <a class="app-card" href="spotify.com" target="_blank" rel="noopener">
+      <div class="app-logo c-spotify">🎵</div>
+      <div class="app-name">Spotify</div>
+      <div class="app-info">spotify.com</div>
+      <div class="open-tag">🔗 Open App</div>
     </a>
+    <a class="app-card" href="https://netflix.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#E50914;">🎬</div>
+      <div class="app-name">Netflix</div>
+      <div class="app-info">netflix.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://primevideo.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream">📺</div>
+      <div class="app-name">Prime Video</div>
+      <div class="app-info">primevideo.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://hotstar.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#00e5ff;">🍿</div>
+      <div class="app-name">Hotstar</div>
+      <div class="app-info">hotstar.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://music.youtube.com" target="_blank" rel="noopener">
+      <div class="app-logo c-yt">🎧</div>
+      <div class="app-name">YT Music</div>
+      <div class="app-info">music.youtube.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://jiocinema.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream">💜</div>
+      <div class="app-name">JioCinema</div>
+      <div class="app-info">jiocinema.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://sonyliv.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream">⚡</div>
+      <div class="app-name">SonyLIV</div>
+      <div class="app-info">sonyliv.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://music.apple.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#FA5858;">🍎</div>
+      <div class="app-name">Apple Music</div>
+      <div class="app-info">apple.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://twitch.tv" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#9146FF;">🎮</div>
+      <div class="app-name">Twitch</div>
+      <div class="app-info">twitch.tv</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://jiotv.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream">📡</div>
+      <div class="app-name">JioTV</div>
+      <div class="app-info">jiotv.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+  </div>
+
+  <div class="section-title">📦 E-Commerce & Shopping</div>
+  <div class="grid">
+    <a class="app-card" href="https://amazon.in" target="_blank" rel="noopener">
+      <div class="app-logo c-amazon">📦</div>
+      <div class="app-name">Amazon India</div>
+      <div class="app-info">amazon.in</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://flipkart.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#2874f0;">🛒</div>
+      <div class="app-name">Flipkart</div>
+      <div class="app-info">flipkart.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://myntra.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream">👗</div>
+      <div class="app-name">Myntra</div>
+      <div class="app-info">myntra.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://blinkit.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#ffcc00;">⚡</div>
+      <div class="app-name">Blinkit</div>
+      <div class="app-info">blinkit.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://swiggy.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#f0592a;">🛵</div>
+      <div class="app-name">Swiggy</div>
+      <div class="app-info">swiggy.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://zomato.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#e23744;">🍽️</div>
+      <div class="app-name">Zomato</div>
+      <div class="app-info">zomato.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://nykaa.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#fc2779;">💄</div>
+      <div class="app-name">Nykaa</div>
+      <div class="app-info">nykaa.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://bigbasket.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream">🧺</div>
+      <div class="app-name">Bigbasket</div>
+      <div class="app-info">bigbasket.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://jiomart.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#0066b2;">🍏</div>
+      <div class="app-name">JioMart</div>
+      <div class="app-info">jiomart.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://ajio.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#ff3f6c;">👕</div>
+      <div class="app-name">Ajio</div>
+      <div class="app-info">ajio.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+  </div>
+
+  <div class="section-title">✈️ Travel & Navigation</div>
+  <div class="grid">
+    <a class="app-card" href="maps.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-maps">📍</div>
+      <div class="app-name">Google Maps</div>
+      <div class="app-info">Location</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://uber.com" target="_blank" rel="noopener">
+      <div class="app-logo c-x" style="color:#fff;">🚗</div>
+      <div class="app-name">Uber</div>
+      <div class="app-info">uber.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://olacabs.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#000;">🚕</div>
+      <div class="app-name">Ola</div>
+      <div class="app-info">olacabs.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://makemytrip.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#0d4d9c;">✈️</div>
+      <div class="app-name">MakeMyTrip</div>
+      <div class="app-info">makemytrip.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://booking.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#003580;">🏨</div>
+      <div class="app-name">Booking.com</div>
+      <div class="app-info">booking.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://airbnb.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#ff385c;">🏡</div>
+      <div class="app-name">Airbnb</div>
+      <div class="app-info">airbnb.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://irctc.co.in" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#213b7a;">🚂</div>
+      <div class="app-name">IRCTC</div>
+      <div class="app-info">irctc.co.in</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://redbus.in" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#d8232a;">🚌</div>
+      <div class="app-name">RedBus</div>
+      <div class="app-info">redbus.in</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://google.com/flights" target="_blank" rel="noopener">
+      <div class="app-logo c-maps">🛫</div>
+      <div class="app-name">G Flights</div>
+      <div class="app-info">google.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://agoda.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#f7a700;">🏖️</div>
+      <div class="app-name">Agoda</div>
+      <div class="app-info">agoda.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+  </div>
+
+  <div class="section-title">📰 News & Media Platforms</div>
+  <div class="grid">
+    <a class="app-card" href="https://moneycontrol.com" target="_blank" rel="noopener">
+      <div class="app-logo c-trader">📈</div>
+      <div class="app-name">Moneycontrol</div>
+      <div class="app-info">moneycontrol.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://economictimes.indiatimes.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#b22222;">📰</div>
+      <div class="app-name">The Eco Times</div>
+      <div class="app-info">indiatimes.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://reddit.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#ff4500;">👽</div>
+      <div class="app-name">Reddit</div>
+      <div class="app-info">reddit.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://medium.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#000;">✍️</div>
+      <div class="app-name">Medium</div>
+      <div class="app-info">medium.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://techcrunch.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#151515;">💻</div>
+      <div class="app-name">TechCrunch</div>
+      <div class="app-info">techcrunch.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://bloomberg.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#000;">📊</div>
+      <div class="app-name">Bloomberg</div>
+      <div class="app-info">bloomberg.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://ndtv.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#f00;">📺</div>
+      <div class="app-name">NDTV</div>
+      <div class="app-info">ndtv.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://aajtak.in" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#ff9933;">🎤</div>
+      <div class="app-name">Aaj Tak</div>
+      <div class="app-info">aajtak.in</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://bqprime.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream">📊</div>
+      <div class="app-name">BQ Prime</div>
+      <div class="app-info">bqprime.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://x.com" target="_blank" rel="noopener">
+      <div class="app-logo c-x" style="color:#fff;">💬</div>
+      <div class="app-name">X News</div>
+      <div class="app-info">x.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+  </div>
+
+  <div class="section-title">🍎 Health & Lifestyle</div>
+  <div class="grid">
+    <a class="app-card" href="https://fit.google.com" target="_blank" rel="noopener">
+      <div class="app-logo c-drive">❤️</div>
+      <div class="app-name">Google Fit</div>
+      <div class="app-info">fit.google.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://samsung.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#0075ff;">📱</div>
+      <div class="app-name">Samsung Health</div>
+      <div class="app-info">samsung.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://myfitnesspal.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#0c81db;">🍎</div>
+      <div class="app-name">MyFitnessPal</div>
+      <div class="app-info">myfitnesspal.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://headspace.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#00a39d;">🧘</div>
+      <div class="app-name">Headspace</div>
+      <div class="app-info">headspace.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://cure.fit" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#ff305a;">🏋️</div>
+      <div class="app-name">Cult.fit</div>
+      <div class="app-info">cure.fit</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://strava.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#fc4c02;">🚴</div>
+      <div class="app-name">Strava</div>
+      <div class="app-info">strava.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://nike.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#000;">🏃</div>
+      <div class="app-name">Nike Run Club</div>
+      <div class="app-info">nike.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://sleepcycle.com" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#01b8aa;">💤</div>
+      <div class="app-name">Sleep Cycle</div>
+      <div class="app-info">sleepcycle.com</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://waterllama.app" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#ff69b4;">💧</div>
+      <div class="app-name">WaterLlama</div>
+      <div class="app-info">waterllama.app</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+    <a class="app-card" href="https://yuka.io" target="_blank" rel="noopener">
+      <div class="app-logo c-stream" style="color:#81d053;">🥑</div>
+      <div class="app-name">Yuka</div>
+      <div class="app-info">yuka.io</div>
+      <div class="open-tag">🔗 Open App</div>
+    </a>
+  </div>
+
+  <div class="section-title">✨ Safar Aur Sangharsh</div>
+  <div class="grid-2">
     <div class="info-card">
-      <div class="info-icon" style="background:linear-gradient(135deg,#1a3a6a,#0d2244);font-size:28px;">🏦</div>
+      <div class="info-icon" style="background:linear-gradient(135deg,#2a1a2a,#4a2a4a);font-size:28px;">📖</div>
       <div class="info-content">
-        <div class="label">Bank / UPI</div>
-        <div class="value">BOI / Kotak / Axis / HDFC</div>
-        <div class="sub">UPI: k4046280-1@okhdfcbank</div>
+        <div class="label">Shiksha / Study</div>
+        <div class="value" style="color:#ffcb47;">12th Pass</div>
+        <div class="sub">Padhai aur mehnat jaari hai</div>
+      </div>
+    </div>
+    <div class="info-card" style="background:linear-gradient(135deg,#1a211a,#0d1a0d);border-color:rgba(255,107,53,0.3)">
+      <div class="info-icon" style="background:rgba(255,107,53,0.15);font-size:28px;">💪</div>
+      <div class="info-content">
+        <div class="label">Sangharsh (2019 se ab tak)</div>
+        <div class="value" style="color:#ff6b35;">Struggler & Fighter</div>
+        <div class="sub">2019 se kai taane aur insult sahi hai, par har insult ko apni taqat banaya hai. Haar nahi manunga.</div>
       </div>
     </div>
   </div>
 
-  <div class="section-title">💰 Meri Income</div>
+  <div class="section-title">💰 Assets & Earnings</div>
   <div class="grid-2">
     <div class="info-card income-highlight">
       <div class="info-icon" style="background:rgba(0,200,100,0.15);font-size:28px;">💵</div>
       <div class="info-content">
         <div class="label">Monthly Income</div>
-        <div class="value">₹ 18,000</div>
-        <div class="sub">Source: Job / Business Trading Marketing</div>
+        <div class="value">₹ 32,000</div>
+        <div class="sub">Source: Job / Business / Marketing</div>
       </div>
     </div>
     <div class="info-card income-highlight">
       <div class="info-icon" style="background:rgba(0,200,100,0.15);font-size:28px;">📈</div>
       <div class="info-content">
         <div class="label">Trading Income</div>
-        <div class="value">₹ 21,000 / Month</div>
+        <div class="value">₹ 22,000 / Month</div>
         <div class="sub">Stocks / Crypto / Forex</div>
       </div>
     </div>
@@ -250,79 +824,59 @@
       <div class="info-icon" style="background:rgba(0,200,100,0.15);font-size:28px;">🎯</div>
       <div class="info-content">
         <div class="label">Side Income</div>
-        <div class="value">₹ 4,000 / Month</div>
+        <div class="value">₹ 62,00 / Month</div>
         <div class="sub">YouTube / Freelance</div>
       </div>
     </div>
     <div class="info-card income-highlight">
       <div class="info-icon" style="background:rgba(0,200,100,0.15);font-size:28px;">🏆</div>
       <div class="info-content">
-        <div class="label">Annual Income</div>
-        <div class="value">₹ 97,000</div>
-        <div class="sub">Per Year (Approx)</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-title">📱 Mere Devices</div>
-  <div class="grid-2">
-    <div class="info-card">
-      <div class="info-icon" style="background:linear-gradient(135deg,#1a1a2e,#2d2d44);font-size:30px;">📱</div>
-      <div class="info-content">
-        <div class="label">Multiple Devices</div>
-        <div class="value">Samsung Z Fold 5 / iPhone & More</div>
-        <div class="sub">1TB / 256GB / 128GB Storage • 51 RAM / 12GB RAM</div>
-        <div class="sub">Total Device Value: ~ ₹ 3,61,000</div>
-      </div>
-    </div>
-    <div class="info-card">
-      <div class="info-icon" style="background:linear-gradient(135deg,#1a2e1a,#2d442d);font-size:30px;">💻</div>
-      <div class="info-content">
-        <div class="label">Laptop / Computer</div>
-        <div class="value">Asus Expertbook p1</div>
-        <div class="sub">i3 • 16GB • 512GB SSD</div>
-        <div class="sub">Price: ₹ 49,000</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-title">🏠 Meri Property</div>
-  <div class="grid-2">
-    <div class="info-card">
-      <div class="info-icon" style="background:linear-gradient(135deg,#2a1a0e,#3d2a15);font-size:28px;">🏠</div>
-      <div class="info-content">
-        <div class="label">Ghar / House</div>
-        <div class="value">—</div>
-        <div class="sub">Location: —</div>
-        <div class="sub">Value: ₹ 0</div>
-      </div>
-    </div>
-    <div class="info-card">
-      <div class="info-icon" style="background:linear-gradient(135deg,#1a0e2a,#2a1540);font-size:28px;">🚗</div>
-      <div class="info-content">
-        <div class="label">Vehicle / Gaadi</div>
-        <div class="value">—</div>
-        <div class="sub">Model: —</div>
-        <div class="sub">Value: ₹ 0</div>
-      </div>
-    </div>
-    <div class="info-card">
-      <div class="info-icon" style="background:linear-gradient(135deg,#0e1a2a,#152a3a);font-size:28px;">🌾</div>
-      <div class="info-content">
-        <div class="label">Zameen / Land</div>
-        <div class="value">—</div>
-        <div class="sub">Location: —</div>
-        <div class="sub">Value: ₹ 0</div>
-      </div>
-    </div>
-    <div class="info-card">
-      <div class="info-icon" style="background:linear-gradient(135deg,#2a0e0e,#401515);font-size:28px;">💎</div>
-      <div class="info-content">
         <div class="label">Total Net Worth</div>
-        <div class="value" style="color:#ffcb47;">₹ 7,00,000</div>
+        <div class="value" style="color:#ffcb47;">₹ 11,00,000</div>
         <div class="sub">Approx Estimate</div>
       </div>
     </div>
+  </div>
+
+  <div class="section-title">📱 Devices & Phones</div>
+  <div class="grid-2">
+    <div class="info-card">
+      <div class="info-icon" style="background:linear-gradient(135deg,#0055ff, #001a66);font-size:26px;">📱</div>
+      <div class="info-content">
+        <div class="label">iPhone 13</div>
+        <div class="value" style="color:#66bb6a;">₹ 55,000</div>
+        <div class="sub">Primary Device</div>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon" style="background:linear-gradient(135deg,#5c258d, #4389a2);font-size:26px;">📱</div>
+      <div class="info-content">
+        <div class="label">Samsung Galaxy Z (Z5)</div>
+        <div class="value" style="color:#ffa726;">₹ 1,77,000</div>
+        <div class="sub">Multitasking Device</div>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon" style="background:linear-gradient(135deg,#000000, #333333);font-size:26px;">📱</div>
+      <div class="info-content">
+        <div class="label">iPhone 11</div>
+        <div class="value" style="color:#42a5f5;">₹ 35,000</div>
+        <div class="sub">Backup Device</div>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon" style="background:linear-gradient(135deg,#7b1fa2, #311b92);font-size:26px;">📱</div>
+      <div class="info-content">
+        <div class="label">iPhone 7</div>
+        <div class="value" style="color:#ef5350;">₹ 14,000</div>
+        <div class="sub">Classic Device</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote-msg">
+    <p>Getting to the top is just the Goal,But the real grind is in the Roll.While they sleep, you put in the Work,That’s how you make the world know your Name.”</p>
+    <span> Arman Qureshi </span>
   </div>
 
 </div>
