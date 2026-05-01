@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mera Digital Profile</title>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+<title>Arman Qureshi - Digital Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0a0a1a; --card: #12122a; --card2: #1a1a35;
@@ -21,7 +21,7 @@
     animation:bgPulse 8s ease-in-out infinite alternate; pointer-events:none; z-index:0;
   }
   @keyframes bgPulse { 0%{transform:scale(1) rotate(0deg)} 100%{transform:scale(1.1) rotate(3deg)} }
-  .container { max-width:1100px; margin:0 auto; padding:24px 16px 60px; position:relative; z-index:1; }
+  .container { max-width:1100px; margin:0 auto; padding:24px 16px 48px; position:relative; z-index:1; }
 
   .header { text-align:center; padding:40px 20px 32px; }
   .avatar-ring {
@@ -48,7 +48,7 @@
   }
   .app-card:hover { transform:translateY(-6px) scale(1.04); border-color:rgba(255,255,255,0.25); box-shadow:0 12px 40px rgba(0,0,0,0.4); }
   .app-card .open-tag { position:absolute; bottom:8px; font-size:0.65rem; color:var(--accent3); opacity:0; transition:opacity 0.2s; }
-  .app-card:hover .open-tag { opacity:1; }
+  .app-card:hover .opentag { opacity:1; }
   .app-logo { width:60px; height:60px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:32px; }
   .app-name { font-size:0.85rem; font-weight:600; text-align:center; }
   .app-info { font-size:0.75rem; color:var(--muted); text-align:center; word-break:break-all; }
@@ -64,6 +64,7 @@
   .income-highlight { background:linear-gradient(135deg,#1a2a1a,#0f1f0f); border-color:rgba(0,200,100,0.3); }
   .income-highlight .value { color:#4eff91; }
 
+  /* Logo colors */
   .c-insta{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
   .c-wa{background:linear-gradient(135deg,#25d366,#128c7e)}
   .c-fb{background:linear-gradient(135deg,#1877f2,#0856af)}
@@ -98,133 +99,134 @@
 <body>
 
 <div class="container">
+
   <div class="header">
     <div class="avatar-ring"><div class="avatar-inner">👤</div></div>
-    <h1 id="profileName"></h1>
-    <div class="subtitle" id="profileTitle"></div>
+    <h1 id="profileName">Arman Qureshi</h1>
+    <div class="subtitle" id="profileTitle">Trader • Creator • Dreamer 🔥</div>
   </div>
 
   <div class="section-title">📱 Social Media</div>
   <div class="grid">
-    <a class="app-card" id="lnk-insta" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-insta" href="https://www.instagram.com/armanqureshi2800" target="_blank" rel="noopener">
       <div class="app-logo c-insta">📸</div>
       <div class="app-name">Instagram</div>
-      <div class="app-info" id="txt-insta"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-insta">@armanqureshi2800</div>
+      <div class="opentag">🔗 Profile Open</div>
     </a>
-    <a class="app-card" id="lnk-wa" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-wa" href="#" style="opacity:0.6; pointer-events: none;" target="_blank" rel="noopener">
       <div class="app-logo c-wa">💬</div>
       <div class="app-name">WhatsApp</div>
-      <div class="app-info" id="txt-wa"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-wa">—</div>
+      <div class="opentag">🔗 Chat Open</div>
     </a>
-    <a class="app-card" id="lnk-fb" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-fb" href="https://www.facebook.com/share/19pPMX9SMV/" target="_blank" rel="noopener">
       <div class="app-logo c-fb">🔵</div>
       <div class="app-name">Facebook</div>
-      <div class="app-info" id="txt-fb"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-fb">Facebook Profile</div>
+      <div class="opentag">🔗 Profile Open</div>
     </a>
-    <a class="app-card" id="lnk-yt" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-yt" href="#" style="opacity:0.6; pointer-events: none;" target="_blank" rel="noopener">
       <div class="app-logo c-yt">▶️</div>
       <div class="app-name">YouTube</div>
-      <div class="app-info" id="txt-yt"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-yt">—</div>
+      <div class="opentag">🔗 Channel Open</div>
     </a>
-    <a class="app-card" id="lnk-tw" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-tw" href="#" style="opacity:0.6; pointer-events: none;" target="_blank" rel="noopener">
       <div class="app-logo c-x" style="color:#fff;font-size:30px;font-weight:900;">𝕏</div>
       <div class="app-name">X / Twitter</div>
-      <div class="app-info" id="txt-tw"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-tw">—</div>
+      <div class="opentag">🔗 Profile Open</div>
     </a>
-    <a class="app-card" id="lnk-pin" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-pin" href="#" style="opacity:0.6; pointer-events: none;" target="_blank" rel="noopener">
       <div class="app-logo c-pin">📌</div>
       <div class="app-name">Pinterest</div>
-      <div class="app-info" id="txt-pin"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-pin">—</div>
+      <div class="opentag">🔗 Profile Open</div>
     </a>
-    <a class="app-card" id="lnk-tg" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-tg" href="#" style="opacity:0.6; pointer-events: none;" target="_blank" rel="noopener">
       <div class="app-logo c-tg">✈️</div>
       <div class="app-name">Telegram</div>
-      <div class="app-info" id="txt-tg"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-tg">—</div>
+      <div class="opentag">🔗 Profile Open</div>
     </a>
-    <a class="app-card" id="lnk-snap" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-snap" href="https://www.snapchat.com/add/armanqureshi_28" target="_blank" rel="noopener">
       <div class="app-logo c-snap" style="font-size:30px;">👻</div>
       <div class="app-name">Snapchat</div>
-      <div class="app-info" id="txt-snap"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-snap">@armanqureshi_28</div>
+      <div class="opentag">🔗 Profile Open</div>
     </a>
-    <a class="app-card" id="lnk-tt" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-tt" href="#" style="opacity:0.6; pointer-events: none;" target="_blank" rel="noopener">
       <div class="app-logo c-tt" style="color:#fff;font-size:28px;">🎵</div>
       <div class="app-name">TikTok</div>
-      <div class="app-info" id="txt-tt"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-tt">—</div>
+      <div class="opentag">🔗 Profile Open</div>
     </a>
-    <a class="app-card" id="lnk-li" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-li" href="#" style="opacity:0.6; pointer-events: none;" target="_blank" rel="noopener">
       <div class="app-logo c-li">💼</div>
       <div class="app-name">LinkedIn</div>
-      <div class="app-info" id="txt-li"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-li">—</div>
+      <div class="opentag">🔗 Profile Open</div>
     </a>
   </div>
 
   <div class="section-title">☁️ Google & Apps</div>
   <div class="grid">
-    <a class="app-card" id="lnk-gmail" href="#" target="_blank" rel="noopener">
+    <a class="app-card" id="lnk-gmail" href="#" style="opacity:0.6; pointer-events: none;" target="_blank" rel="noopener">
       <div class="app-logo c-gmail">📧</div>
       <div class="app-name">Gmail</div>
-      <div class="app-info" id="txt-gmail"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-gmail">—</div>
+      <div class="opentag">🔗 Mail Open</div>
     </a>
     <a class="app-card" href="https://drive.google.com" target="_blank" rel="noopener">
       <div class="app-logo c-drive">🗂️</div>
       <div class="app-name">Google Drive</div>
       <div class="app-info">drive.google.com</div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="opentag">🔗 Drive Open</div>
     </a>
     <a class="app-card" href="https://maps.google.com" target="_blank" rel="noopener">
       <div class="app-logo c-maps">📍</div>
       <div class="app-name">Google Maps</div>
       <div class="app-info">maps.google.com</div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="opentag">🔗 Maps Open</div>
     </a>
     <a class="app-card" href="https://pay.google.com" target="_blank" rel="noopener">
       <div class="app-logo c-pay" style="font-size:26px;">💳</div>
       <div class="app-name">GPay</div>
-      <div class="app-info" id="txt-gpay"></div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info" id="txt-gpay">UPI ID</div>
+      <div class="opentag">🔗 GPay Open</div>
     </a>
     <a class="app-card" href="https://amazon.in" target="_blank" rel="noopener">
       <div class="app-logo c-amazon">📦</div>
       <div class="app-name">Amazon</div>
       <div class="app-info">amazon.in</div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="opentag">🔗 Amazon Open</div>
     </a>
-    <a class="app-card" href="https://open.spotify.com" target="_blank" rel="noopener">
+    <a class="app-card" href="https://spotify.com" target="_blank" rel="noopener">
       <div class="app-logo c-spotify">🎵</div>
       <div class="app-name">Spotify</div>
-      <div class="app-info">open.spotify.com</div>
-      <div class="open-tag">🔗 Open</div>
+      <div class="app-info">spotify.com</div>
+      <div class="opentag">🔗 Spotify Open</div>
     </a>
   </div>
 
   <div class="section-title">📈 Trading & Finance</div>
   <div class="grid-2">
-    <a class="info-card" id="lnk-trader" href="#" target="_blank" rel="noopener">
+    <a class="info-card" id="lnk-trader" href="https://groww.in/login" target="_blank" rel="noopener">
       <div class="info-icon c-trader" style="font-size:28px;">📊</div>
       <div class="info-content">
         <div class="label">Trading App / Broker</div>
-        <div class="value" id="txt-trader"></div>
-        <div class="sub" id="txt-trader-id"></div>
-        <span class="badge">🔗 Click to Open</span>
+        <div class="value" id="txt-trader">Groww</div>
+        <div class="sub" id="txt-trader-id">Client ID: A294715</div>
+        <span class="badge">🔗 App Open Hogi</span>
       </div>
     </a>
     <div class="info-card">
       <div class="info-icon" style="background:linear-gradient(135deg,#1a3a6a,#0d2244);font-size:28px;">🏦</div>
       <div class="info-content">
         <div class="label">Bank / UPI</div>
-        <div class="value" id="txt-bank"></div>
-        <div class="sub" id="txt-upi"></div>
+        <div class="value" id="txt-bank">HDFC Bank</div>
+        <div class="sub" id="txt-upi">UPI: arman@okhdfc</div>
       </div>
     </div>
   </div>
@@ -235,15 +237,15 @@
       <div class="info-icon" style="background:rgba(0,200,100,0.15);font-size:28px;">💵</div>
       <div class="info-content">
         <div class="label">Monthly Income</div>
-        <div class="value" id="txt-monthly"></div>
-        <div class="sub" id="txt-inc-src"></div>
+        <div class="value" id="txt-monthly">₹ 65,000</div>
+        <div class="sub" id="txt-inc-src">Source: Trading & Freelance</div>
       </div>
     </div>
     <div class="info-card income-highlight">
       <div class="info-icon" style="background:rgba(0,200,100,0.15);font-size:28px;">📈</div>
       <div class="info-content">
         <div class="label">Trading Income</div>
-        <div class="value" id="txt-trade-inc"></div>
+        <div class="value" id="txt-trade-inc">₹ 15,000 / Month</div>
         <div class="sub">Stocks / Crypto / Forex</div>
       </div>
     </div>
@@ -251,15 +253,15 @@
       <div class="info-icon" style="background:rgba(0,200,100,0.15);font-size:28px;">🎯</div>
       <div class="info-content">
         <div class="label">Side Income</div>
-        <div class="value" id="txt-side-inc"></div>
+        <div class="value" id="txt-side-inc">₹ 8,000 / Month</div>
         <div class="sub">YouTube / Freelance</div>
       </div>
     </div>
     <div class="info-card income-highlight">
       <div class="info-icon" style="background:rgba(0,200,100,0.15);font-size:28px;">🏆</div>
       <div class="info-content">
-        <div class="label">Annual Income</45k>
-        <div class="value" id="txt-annual"></div>
+        <div class="label">Annual Income</div>
+        <div class="value" id="txt-annual">₹ 9,20,000</div>
         <div class="sub">Per Year (Approx)</div>
       </div>
     </div>
@@ -271,18 +273,18 @@
       <div class="info-icon" style="background:linear-gradient(135deg,#1a1a2e,#2d2d44);font-size:30px;">📱</div>
       <div class="info-content">
         <div class="label">Mobile / Smartphone</div>
-        <div class="value" id="txt-mobile"></div>
-        <div class="sub" id="txt-mob-spec"></div>
-        <div class="sub" id="txt-mob-price"></div>
+        <div class="value" id="txt-mobile">iPhone 15 Pro</div>
+        <div class="sub" id="txt-mob-spec">8GB RAM • 128GB Storage</div>
+        <div class="sub" id="txt-mob-price">Price: ₹ 1,30,000</div>
       </div>
     </div>
     <div class="info-card">
       <div class="info-icon" style="background:linear-gradient(135deg,#1a2e1a,#2d442d);font-size:30px;">💻</div>
       <div class="info-content">
         <div class="label">Laptop / Computer</div>
-        <div class="value" id="txt-laptop"></div>
-        <div class="sub" id="txt-lap-spec"></div>
-        <div class="sub" id="txt-lap-price"></div>
+        <div class="value" id="txt-laptop">MacBook Air M2</div>
+        <div class="sub" id="txt-lap-spec">Apple M2 • 8GB • 256GB SSD</div>
+        <div class="sub" id="txt-lap-price">Price: ₹ 99,900</div>
       </div>
     </div>
   </div>
@@ -293,182 +295,40 @@
       <div class="info-icon" style="background:linear-gradient(135deg,#2a1a0e,#3d2a15);font-size:28px;">🏠</div>
       <div class="info-content">
         <div class="label">Ghar / House</div>
-        <div class="value" id="txt-house"></div>
-        <div class="sub" id="txt-house-loc"></div>
-        <div class="sub" id="txt-house-price"></div>
+        <div class="value" id="txt-house">Apna Ghar</div>
+        <div class="sub" id="txt-house-loc">Location: Mumbai, Maharashtra</div>
+        <div class="sub" id="txt-house-price">Value: ₹ 35 Lakh</div>
       </div>
     </div>
     <div class="info-card">
       <div class="info-icon" style="background:linear-gradient(135deg,#1a0e2a,#2a1540);font-size:28px;">🚗</div>
       <div class="info-content">
         <div class="label">Vehicle / Gaadi</div>
-        <div class="value" id="txt-vehicle"></div>
-        <div class="sub" id="txt-veh-model"></div>
-        <div class="sub" id="txt-veh-price"></div>
+        <div class="value" id="txt-vehicle">Royal Enfield Hunter</div>
+        <div class="sub" id="txt-veh-model">Model: 2024 Model</div>
+        <div class="sub" id="txt-veh-price">Value: ₹ 1.8 Lakh</div>
       </div>
     </div>
     <div class="info-card">
       <div class="info-icon" style="background:linear-gradient(135deg,#0e1a2a,#152a3a);font-size:28px;">🌾</div>
       <div class="info-content">
         <div class="label">Zameen / Land</div>
-        <div class="value" id="txt-land"></div>
-        <div class="sub" id="txt-land-loc"></div>
-        <div class="sub" id="txt-land-price"></div>
+        <div class="value" id="txt-land">5 Bigha</div>
+        <div class="sub" id="txt-land-loc">Location: Uttar Pradesh</div>
+        <div class="sub" id="txt-land-price">Value: ₹ 25 Lakh</div>
       </div>
     </div>
     <div class="info-card">
       <div class="info-icon" style="background:linear-gradient(135deg,#2a0e0e,#401515);font-size:28px;">💎</div>
       <div class="info-content">
         <div class="label">Total Net Worth</div>
-        <div class="value" id="txt-net" style="color:#ffcb47;"></div>
+        <div class="value" id="txt-net" style="color:#ffcb47;">₹ 65 Lakh</div>
         <div class="sub">Approx Estimate</div>
       </div>
     </div>
   </div>
+
 </div>
 
-<script>
-// ============================================================
-//   SIRF YAHAN APNA DATA BHARO — BAAKI KUCH MAT CHHEDO!
-// ============================================================
-const D = {
-  name:        'Aapka Naam',                // Poora naam
-  title:       'Trader • Creator • Dreamer 🔥', // Tagline
-
-  // ── SOCIAL MEDIA ─────────────────────────────────────────
-  insta:       '',   // Instagram username  e.g. Armanqureshi2800
-  wa:          '',   // WhatsApp number     e.g.  919026550240
-  fb:          '',   // Facebook username   e.g.  https://www.facebook.com/arman.qureshi.544437?rdid=ySCLqSX8mhAPNOBr&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19pPMX9SMV%2F#
-  yt:          '',   // YouTube handle      e.g.  UCOyRiMeC7mCY0okyccR409w
-  tw:          '',   // X/Twitter username  e.g.  ArmanQureshi280
-  pin:         '',   // Pinterest username  e.g.  rahul_pin
-  tg:          '',   // Telegram username   e.g.  rahulbot
-  snap:        '',   // Snapchat username   e.g.  rahul_snap
-  tt:          '',   // TikTok username     e.g.  rahul123
-  li:          '',   // LinkedIn username   e.g.  rahul-sharma
-
-  // ── GOOGLE & FINANCE ─────────────────────────────────────
-  gmail:       '',   // Gmail ID            e.g.  aap@gmail.com
-  gpay:        '',   // GPay/UPI ID         e.g.  aap@okaxis
-  trader:      '',   // Trading app naam    e.g.  Zerodha
-  trader_id:   '',   // Client ID           e.g.  AB1234
-  bank:        '',   // Bank naam           e.g.  SBI
-  upi:         '',   // Bank UPI            e.g.  aap@sbi
-
-  // ── INCOME ───────────────────────────────────────────────
-  monthly:     '',   // Monthly income      e.g.  ₹ 50,000
-  inc_src:     '',   // Income source       e.g.  Job / Business
-  trade_inc:   '',   // Trading income      e.g.  ₹ 10,000 / Month
-  side_inc:    '',   // Side income         e.g.  ₹ 5,000 / Month
-  annual:      '',   // Annual income       e.g.  ₹ 7,20,000
-
-  // ── DEVICES ──────────────────────────────────────────────
-  mobile:      '',   // Mobile model        e.g.  Samsung S24 Ultra
-  mob_spec:    '',   // Mobile specs        e.g.  12GB RAM • 256GB
-  mob_price:   '',   // Mobile price        e.g.  ₹ 1,30,000
-  laptop:      '',   // Laptop model        e.g.  Dell XPS 15
-  lap_spec:    '',   // Laptop specs        e.g.  i7 • 16GB • 512GB
-  lap_price:   '',   // Laptop price        e.g.  ₹ 1,20,000
-
-  // ── PROPERTY ─────────────────────────────────────────────
-  house:       '',   // Ghar type           e.g.  2BHK Flat
-  house_loc:   '',   // Ghar location       e.g.  Mumbai
-  house_price: '',   // Ghar value          e.g.  ₹ 50 Lakh
-  vehicle:     '',   // Gaadi naam          e.g.  Maruti Swift
-  veh_model:   '',   // Gaadi model/year    e.g.  2024 Model
-  veh_price:   '',   // Gaadi value         e.g.  ₹ 8 Lakh
-  land:        '',   // Zameen              e.g.  5 Bigha
-  land_loc:    '',   // Zameen location     e.g.  Meerut, UP
-  land_price:  '',   // Zameen value        e.g.  ₹ 30 Lakh
-  net:         '',   // Total net worth     e.g.  ₹ 1 Crore
-};
-// ============================================================
-//   UPAR TAK HI BHARO — NEECHE KUCH MAT CHHEDO
-// ============================================================
-
-function c(s){ return (s||'').replace(/^@/,'').trim(); }
-
-function sl(id, href){
-  const el=document.getElementById(id);
-  if(!el) return;
-  if(href){ el.href=href; el.target='_blank'; }
-  else { el.href='#'; el.removeAttribute('target'); el.style.opacity='0.5'; }
-}
-function t(id,val){ const e=document.getElementById(id); if(e) e.textContent=val||''; }
-
-(function render(){
-  document.getElementById('profileName').textContent  = D.name;
-  document.getElementById('profileTitle').textContent = D.title;
-
-  sl('lnk-insta', D.insta ? 'https://instagram.com/'+c(D.insta) : null);
-  t('txt-insta', D.insta ? '@'+c(D.insta) : '');
-
-  sl('lnk-wa', D.wa ? 'https://wa.me/'+D.wa.replace(/\D/g,'') : null);
-  t('txt-wa', D.wa ? '+'+D.wa.replace(/\D/g,'') : '');
-
-  sl('lnk-fb', D.fb ? 'https://facebook.com/'+D.fb.trim() : null);
-  t('txt-fb', D.fb||'');
-
-  sl('lnk-yt', D.yt ? 'https://youtube.com/'+(D.yt.startsWith('@')?D.yt:'@'+D.yt) : null);
-  t('txt-yt', D.yt ? (D.yt.startsWith('@')?D.yt:'@'+D.yt) : '');
-
-  sl('lnk-tw', D.tw ? 'https://x.com/'+c(D.tw) : null);
-  t('txt-tw', D.tw ? '@'+c(D.tw) : '');
-
-  sl('lnk-pin', D.pin ? 'https://pinterest.com/'+c(D.pin) : null);
-  t('txt-pin', D.pin||'');
-
-  sl('lnk-tg', D.tg ? 'https://t.me/'+c(D.tg) : null);
-  t('txt-tg', D.tg ? '@'+c(D.tg) : '');
-
-  sl('lnk-snap', D.snap ? 'https://snapchat.com/add/'+c(D.snap) : null);
-  t('txt-snap', D.snap||'');
-
-  sl('lnk-tt', D.tt ? 'https://tiktok.com/@'+c(D.tt) : null);
-  t('txt-tt', D.tt ? '@'+c(D.tt) : '');
-
-  sl('lnk-li', D.li ? 'https://linkedin.com/in/'+D.li.trim() : null);
-  t('txt-li', D.li||'');
-
-  sl('lnk-gmail', D.gmail ? 'mailto:'+D.gmail : null);
-  t('txt-gmail', D.gmail||'');
-  t('txt-gpay', D.gpay||'');
-
-  const traderUrl =
-    (D.trader||'').toLowerCase().includes('zerodha') ? 'https://zerodha.com/login' :
-    (D.trader||'').toLowerCase().includes('groww')   ? 'https://groww.in/login'   :
-    (D.trader||'').toLowerCase().includes('upstox')  ? 'https://login.upstox.com' :
-    D.trader ? 'https://google.com/search?q='+encodeURIComponent(D.trader+' login') : null;
-  sl('lnk-trader', traderUrl);
-  t('txt-trader',    D.trader);
-  t('txt-trader-id', D.trader_id);
-  t('txt-bank',      D.bank);
-  t('txt-upi',       D.upi ? 'UPI: '+D.upi : '');
-
-  t('txt-monthly',   D.monthly);
-  t('txt-inc-src',   D.inc_src ? 'Source: '+D.inc_src : '');
-  t('txt-trade-inc', D.trade_inc);
-  t('txt-side-inc',  D.side_inc);
-  t('txt-annual',    D.annual);
-
-  t('txt-mobile',    D.mobile);
-  t('txt-mob-spec',  D.mob_spec);
-  t('txt-mob-price', D.mob_price ? 'Price: '+D.mob_price : '');
-  t('txt-laptop',    D.laptop);
-  t('txt-lap-spec',  D.lap_spec);
-  t('txt-lap-price', D.lap_price ? 'Price: '+D.lap_price : '');
-
-  t('txt-house',       D.house);
-  t('txt-house-loc',   D.house_loc ? 'Location: '+D.house_loc : '');
-  t('txt-house-price', D.house_price ? 'Value: '+D.house_price : '');
-  t('txt-vehicle',     D.vehicle);
-  t('txt-veh-model',   D.veh_model ? 'Model: '+D.veh_model : '');
-  t('txt-veh-price',   D.veh_price ? 'Value: '+D.veh_price : '');
-  t('txt-land',        D.land);
-  t('txt-land-loc',    D.land_loc ? 'Location: '+D.land_loc : '');
-  t('txt-land-price',  D.land_price ? 'Value: '+D.land_price : '');
-  t('txt-net',         D.net);
-})();
-</script>
 </body>
 </html>
